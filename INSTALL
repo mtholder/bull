@@ -1,1 +1,25 @@
+Dependencies for building:
+    1. autoconf
+    2. automake
+    3. make
+    4. a C++ compiler
+    5. the NEXUS class library (see http://sourceforge.net/projects/ncl )
+
+
+Assuming that you have NCL_INSTALL_DIR as an environmental variable that is set
+    to the path that served as the prefix for your NCL installation (the default
+    is /usr/local/lib if you did not use the --prefix argument to NCL's configure
+    script), then the following should work.
+    
+From the source code repository do the following (where $ is the bash prompt, 
+    not a character that you should type):
+
+################################################################################
+$ sh bootstrap.sh
+$ mkdir build
+$ cd build
+$ ../configure --prefix=$PWD/installed --with-ncl=$NCL_INSTALL_DIR 
+$ make 
+$ make install
+$ make install check
 
