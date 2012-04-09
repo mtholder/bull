@@ -1,0 +1,5 @@
+export runn="nuc.GTRIG"
+export analysistag="garli_nuc"
+export topdirn="/Users/mholder/Documents/projects/bull/24AprResults/${analysistag}"
+export modeldir="/Users/mholder/Documents/projects/bull/24Apr08Datasets"
+export resultsdir="/Users/mholder/Documents/projects/bull/results"

@@ -1,0 +1,13 @@
+#NEXUS
+begin taxa;
+dimensions ntax=2;
+taxlabels t1 t2 ;
+end;
+
+BEGIN TREES;
+	TREE MODEL = [&U] (t1:0.0,t2:0.15);
+end;
+begin Bull;
+	COMMANDHERE
+	simulate verbose nreps= 1 1 Noutput=2 OUTputtypes=(dna protein)    concat= 1  overwrite file=(hkyVerboseDNA.nex hkyVerboseAA.nex) Collapsefile = verbosecollapsed.tre;	quit;
+end;

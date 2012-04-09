@@ -1,0 +1,13 @@
+begin taxa;
+dimensions ntax=6;
+taxlabels t1 t2 t3 t4 t5 t6;
+end;
+
+BEGIN TREES;
+	TREE MODEL = [&U] (t1:0.02,t2:0.1,t3:0.0,(t4:0.02,t5:0.1,t6:0.0):0.02);
+end;
+begin Bull;
+	COMMANDHERE
+	simulate nreps= 1 1  Noutput=2 OUTputtypes=(dna protein)    concat= 100  overwrite file=(6taxHKYDNA.nex 6taxHKYAA.nex) Collapsefile = 6TaxHKYcollapsed.tre;
+	quit;
+end;
