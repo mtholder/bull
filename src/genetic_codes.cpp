@@ -37,6 +37,7 @@
  
 
 #include <cmath>
+#include <cassert>
 #include "genetic_codes.hpp"
 #include "mth_exception.hpp"
 

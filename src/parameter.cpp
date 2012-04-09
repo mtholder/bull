@@ -35,7 +35,7 @@
 //	little debugging has been done on UNIX platforms).	I would suggest checking 
 //	the simulator by generating data on trees with short branches, etc.
  
-
+#include <cassert>
 #include "parameter.hpp"
 
 using namespace bull;

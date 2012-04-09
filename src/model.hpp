@@ -40,6 +40,7 @@
 #define MODEL_HPP
 
 #include <iostream>
+#include <cassert>
 
 #include "basic_bull.hpp"
 
